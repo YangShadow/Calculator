@@ -8,8 +8,7 @@ fun main() {
                 "比如：1 + 1，注意符合与数字之间要有空格。\n" +
                 "输入exit，退出程序。")
 
-        var input = readLine()
-        if (input == null) continue
+        var input = readln() ?:continue
         if (input == "exit") exitProcess(0)
 
         var inputList = input.split(" ")
